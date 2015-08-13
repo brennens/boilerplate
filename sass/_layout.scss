@@ -1,0 +1,53 @@
+/*------------------------------------*\
+              ¡GENERAL
+\*------------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: color(main-1);
+}
+
+.lk-wrap{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: unquote('-' + config(footer));
+    position: relative;
+}
+
+
+
+
+/*------------------------------------*\
+                ¡HEADER
+\*------------------------------------*/
+
+header {
+    height: config(header);
+}
+
+
+
+/*------------------------------------*\
+                ¡FOOTER
+\*------------------------------------*/
+
+.lk-push,
+footer {
+    height: config(footer);
+}

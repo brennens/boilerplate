@@ -9,11 +9,11 @@ $colors: (
 );
 
 $breakpoints: (
-	phone: 400px,
-	phone-lg: 650px,
-	tablet: 768px,
+	phone: 399px,
+	phone-lg: 649px,
+	tablet: 767px,
 	tablet-lg: 991px,
-	desktop-lg: 1024px
+	desktop-lg: 1023px
 );
 
 @function config($key) {
