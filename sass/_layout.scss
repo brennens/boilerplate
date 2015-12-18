@@ -11,22 +11,17 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
-
-body{
-    height: 100%;
+body {
+    @include flexbox();
+    @include flex-direction(column);
+    background: color(main);
     font-family: sans-serif;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
-    background: color(main-1);
 }
 
-.lk-wrap{
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin-bottom: unquote('-' + config(footer));
+.lk-content {
+    @include flex(1);
     position: relative;
 }
 
@@ -47,7 +42,6 @@ header {
                 ¡FOOTER
 \*------------------------------------*/
 
-.lk-push,
 footer {
     height: config(footer);
 }
