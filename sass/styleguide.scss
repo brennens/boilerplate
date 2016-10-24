@@ -1,56 +1,4 @@
 /*------------------------------------*\
-              ¡GENERAL
-\*------------------------------------*/
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    @include flexbox();
-    @include flex-direction(column);
-    background: color(nuetral-1);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-}
-
-.lk-content {
-    @include flex(1);
-    position: relative;
-}
-
-
-
-
-/*------------------------------------*\
-                ¡HEADER
-\*------------------------------------*/
-
-header {
-    height: config(header);
-}
-
-
-
-/*------------------------------------*\
-                ¡FOOTER
-\*------------------------------------*/
-
-footer {
-    height: config(footer);
-}
-
-
-
-
-/*------------------------------------*\
                STYLEGUIDE
 \*------------------------------------*/
 
@@ -58,14 +6,14 @@ footer {
     margin: 0 0 100px;
     padding: 0 20px;
     .title {
-        border-bottom: solid 1px color(nuetral-2);
+        border-bottom: solid 1px color(neutral-2);
         color: color(color-1);
         margin: 20px 0;
         padding: 0 0 5px;
     }
     .instructions {
-        @include boxShadow(inset 0 0 8px color(nuetral-2));
-        background: color(nuetral-1);
+        @include boxShadow(inset 0 0 8px color(neutral-2));
+        background: color(neutral-1);
         font-size: 1.25rem;
         margin: 0 0 20px;
         padding: 15px;
@@ -73,7 +21,7 @@ footer {
     .swatch {
         text-align: center;
         .swatch-color {
-            border: solid 1px color(nuetral-2);
+            border: solid 1px color(neutral-2);
             height: 100px;
             margin: 0 auto 5px;
             width: 100px;

@@ -6,10 +6,10 @@
 	margin: 20px 0 0;
 	.label {
 		display: block;
-		color: color(nuetral-2);
+		color: color(neutral-2);
 	}
 	.input {
-		border: solid 1px color(nuetral-2);
+		border: solid 1px color(neutral-2);
 		display: block;
 		font-size: 1rem;
 		height: 40px;
@@ -17,7 +17,7 @@
 		width: 100%;
 	}
 	.textarea {
-		border: solid 1px color(nuetral-2);
+		border: solid 1px color(neutral-2);
 		display: block;
 		font-size: 1rem;
 		height: 150px;
@@ -37,23 +37,32 @@
 	    z-index: -1;
 	  }
 	  span {
-	  	border: solid 1px color(nuetral-2);
-	    display: block;
-	    height: 20px;
-	    left: 0;
-	    position: absolute;
-	    top: 0;
-	    width: 20px;
-	    -webkit-user-select: none;
-	    -moz-user-select: none;
-	    -ms-user-select: none;
-	    user-select: none;
+			background-color: color(neutral-0);
+      border: solid 1px color(neutral-0);
+      border-radius: 4px;
+      display: block;
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
 	  }
-	  input:checked ~ span {
-	    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAATtJREFUeNrs18sNgzAMBuCECbpE7z10ATaht47UW7tJF+iBe5foCAUUUEp5JI6xHeRfQgiQiL9DwDZGo9FopOZ8ex/aw79nc0Q0p6e7LF/X4yc7iIc4uVt1j7EZI4yPsZkjBkyxA0QHsTtAPJo9crF7QIj9asUiREIgCHEQKEIUJAUhBpKKEAHBQLBDsBCsEEwEGwQbwQLZAkEO2QrxB2kWurdnyIs4ET8Qh6hSX8iBGCAjhMHEUCA6yAwCZQEqRJtiZZGq3zeSET2kdAM8GoYa4e8RtIU5EOOvVnIBXIip/wi4EE7E5J8dUhA3YrZFiSlMAmKx1wot0D1nRaw2jYEYw40I6n4TMGSI4DYegCFFRM0jERhyRPRgFYBhQYAmxAUMGwI86k5gWBFJM7uHqbkRWCOsRqPR0OUrwADU0PN/fzhQbgAAAABJRU5ErkJggg==');
-	  	background-position: 50%;
-	  	background-repeat: no-repeat;
-	  	background-size: 16px;
+	  input:checked ~ span:after {
+			@include transform(rotate(135deg));
+      border-color: color(color-2);
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      right: 2px;
+      position: absolute;
+      top: 3px;
+      width: 12px;
 	  }
 	}
 	.radio {
@@ -67,7 +76,7 @@
 	    z-index: -1;
 	  }
 	  span {
-	  	border: solid 1px color(nuetral-2);
+	  	border: solid 1px color(neutral-2);
 	    border-radius: 50%;
 	    display: block;
 	    height: 20px;
@@ -97,12 +106,12 @@
 	  }
 	}
 	.select {
-		border: solid 1px color(nuetral-2);
+		border: solid 1px color(neutral-2);
 		display: inline-block;
 		position: relative;
 		width: 100%;
 		select{
-			background: color(nuetral-1);
+			background: color(neutral-1);
 			border: 0;
 			border-radius: 0;
 			cursor: pointer;
@@ -131,5 +140,5 @@
 			transform: rotate(135deg);
 			width: 16px;
 		}
-	}	
+	}
 }
