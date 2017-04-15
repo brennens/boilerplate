@@ -14,15 +14,15 @@
 body {
     @include flexbox();
     @include flex-direction(column);
-    background: color(neutral-1);
-    font-family: 'Open Sans', sans-serif;
+    background: color(neutral-0);
+    font-family: -apple-sytem,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
 }
 
-.lk-content {
+.bs-content {
     @include flex(1);
     position: relative;
 }

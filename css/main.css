@@ -5,13 +5,13 @@
 /********************
 ¡CLASSES
 ********************/
-.lk-clear:after, .lk-squeeze:after {
+.bs-clear:after, .bs-squeeze:after {
   display: block;
   font-size: 0;
   content: " ";
   clear: both; }
 
-.lk-squeeze {
+.bs-squeeze {
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
@@ -19,7 +19,7 @@
   height: 100%;
   max-width: 1000px; }
   @media screen and (max-width: 649px) {
-    .lk-squeeze {
+    .bs-squeeze {
       padding: 0 10px; } }
 
 .show-mobile-inline,
@@ -168,7 +168,7 @@
   padding-left: 10px !important; }
 
 /**
-* Floats  
+* Floats
 */
 .none {
   float: none !important; }
@@ -203,6 +203,9 @@
 .text--right {
   text-align: right !important; }
 
+/********************
+¡FLEXBOX MIXINS
+********************/
 /*------------------------------------*\
               ¡BUTTONS
 \*------------------------------------*/
@@ -233,28 +236,10 @@
               ¡TYPOGRAPHY
 \*------------------------------------*/
 html {
-  font-size: 16px; }
+  font-size: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2.25rem; }
-
-h3 {
-  font-size: 2rem; }
-
-h4 {
-  font-size: 1.75rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h6 {
-  font-size: 1.25rem; }
 
 /*------------------------------------*\
               ¡FORMS
@@ -290,7 +275,9 @@ h6 {
       opacity: 0;
       z-index: -1; }
     .input-group .checkbox span {
-      border: solid 1px #000000;
+      background-color: #FFFFFF;
+      border: solid 1px #FFFFFF;
+      border-radius: 4px;
       display: block;
       height: 20px;
       left: 0;
@@ -301,11 +288,22 @@ h6 {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none; }
-    .input-group .checkbox input:checked ~ span {
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAATtJREFUeNrs18sNgzAMBuCECbpE7z10ATaht47UW7tJF+iBe5foCAUUUEp5JI6xHeRfQgiQiL9DwDZGo9FopOZ8ex/aw79nc0Q0p6e7LF/X4yc7iIc4uVt1j7EZI4yPsZkjBkyxA0QHsTtAPJo9crF7QIj9asUiREIgCHEQKEIUJAUhBpKKEAHBQLBDsBCsEEwEGwQbwQLZAkEO2QrxB2kWurdnyIs4ET8Qh6hSX8iBGCAjhMHEUCA6yAwCZQEqRJtiZZGq3zeSET2kdAM8GoYa4e8RtIU5EOOvVnIBXIip/wi4EE7E5J8dUhA3YrZFiSlMAmKx1wot0D1nRaw2jYEYw40I6n4TMGSI4DYegCFFRM0jERhyRPRgFYBhQYAmxAUMGwI86k5gWBFJM7uHqbkRWCOsRqPR0OUrwADU0PN/fzhQbgAAAABJRU5ErkJggg==");
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: 16px; }
+    .input-group .checkbox input:checked ~ span:after {
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+      border-color: #3498db;
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      right: 2px;
+      position: absolute;
+      top: 3px;
+      width: 12px; }
   .input-group .radio {
     position: relative;
     display: block;
@@ -412,12 +410,13 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   background: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
+  font-family: -apple-sytem,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased; }
 
-.lk-content {
+.bs-content {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -moz-box-flex: 1;
@@ -437,77 +436,5 @@ header {
 \*------------------------------------*/
 footer {
   height: 100px; }
-
-/*------------------------------------*\
-               STYLEGUIDE
-\*------------------------------------*/
-.style-group {
-  margin: 0 0 100px;
-  padding: 0 20px; }
-  .style-group .title {
-    border-bottom: solid 1px #000000;
-    color: #3498db;
-    margin: 20px 0;
-    padding: 0 0 5px; }
-  .style-group .instructions {
-    -webkit-box-shadow: inset 0 0 8px #000000;
-    box-shadow: inset 0 0 8px #000000;
-    background: #FFFFFF;
-    font-size: 1.25rem;
-    margin: 0 0 20px;
-    padding: 15px; }
-  .style-group .swatch {
-    text-align: center; }
-    .style-group .swatch .swatch-color {
-      border: solid 1px #000000;
-      height: 100px;
-      margin: 0 auto 5px;
-      width: 100px; }
-    .style-group .swatch span {
-      display: block; }
-  .style-group .swatch-wrap,
-  .style-group .button-wrap,
-  .style-group .link-wrap,
-  .style-group .icon-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    justify-content: space-between; }
-    .style-group .swatch-wrap.start,
-    .style-group .button-wrap.start,
-    .style-group .link-wrap.start,
-    .style-group .icon-wrap.start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      -webkit-justify-content: flex-start;
-      -moz-justify-content: flex-start;
-      justify-content: flex-start; }
-    .style-group .swatch-wrap.baseline,
-    .style-group .button-wrap.baseline,
-    .style-group .link-wrap.baseline,
-    .style-group .icon-wrap.baseline {
-      -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-      -webkit-align-items: baseline;
-      -moz-align-items: baseline;
-      align-items: baseline; }
-  .style-group .button-container {
-    width: 215px; }
-    .style-group .button-container span {
-      display: block;
-      margin: 5px 0 0; }
-  .style-group .link-container,
-  .style-group .icon-container {
-    width: 125px; }
-    .style-group .link-container span,
-    .style-group .icon-container span {
-      display: block;
-      margin: 5px 0 0; }
 
 /*# sourceMappingURL=main.css.map */

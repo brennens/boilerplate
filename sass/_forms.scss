@@ -6,10 +6,10 @@
 	margin: 20px 0 0;
 	.label {
 		display: block;
-		color: color(neutral-2);
+		color: color(neutral-1);
 	}
 	.input {
-		border: solid 1px color(neutral-2);
+		border: solid 1px color(neutral-1);
 		display: block;
 		font-size: 1rem;
 		height: 40px;
@@ -17,7 +17,7 @@
 		width: 100%;
 	}
 	.textarea {
-		border: solid 1px color(neutral-2);
+		border: solid 1px color(neutral-1);
 		display: block;
 		font-size: 1rem;
 		height: 150px;
@@ -53,7 +53,7 @@
 	  }
 	  input:checked ~ span:after {
 			@include transform(rotate(135deg));
-      border-color: color(color-2);
+      border-color: color(color-1);
       border-style: solid;
       border-width: 2px 2px 0 0;
       content: '';
@@ -76,7 +76,7 @@
 	    z-index: -1;
 	  }
 	  span {
-	  	border: solid 1px color(neutral-2);
+	  	border: solid 1px color(neutral-1);
 	    border-radius: 50%;
 	    display: block;
 	    height: 20px;
@@ -106,12 +106,12 @@
 	  }
 	}
 	.select {
-		border: solid 1px color(neutral-2);
+		border: solid 1px color(neutral-1);
 		display: inline-block;
 		position: relative;
 		width: 100%;
 		select{
-			background: color(neutral-1);
+			background: color(neutral-0);
 			border: 0;
 			border-radius: 0;
 			cursor: pointer;

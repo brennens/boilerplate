@@ -52,11 +52,6 @@
     transform-origin: #{$str};
 }
 
-@mixin boxShadow($str) {
-    -webkit-box-shadow: #{$str};
-            box-shadow: #{$str};
-}
-
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
         @content;
@@ -90,14 +85,14 @@
 /********************
 ¡CLASSES
 ********************/
-.lk-clear:after {
+.bs-clear:after {
     display: block;
     font-size: 0;
     content: " ";
     clear: both;
 }
 
-.lk-squeeze {
+.bs-squeeze {
     position: relative;
     margin: 0 auto;
     padding: 0 20px;
@@ -109,8 +104,8 @@
     }
 }
 
-.lk-squeeze:after {
-    @extend .lk-clear;
+.bs-squeeze:after {
+    @extend .bs-clear;
 }
 
 .show-mobile-inline,
