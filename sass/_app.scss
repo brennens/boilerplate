@@ -16,6 +16,7 @@ body {
     @include flex-direction(column);
     background: color(neutral-1);
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
     font-weight: 400;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
