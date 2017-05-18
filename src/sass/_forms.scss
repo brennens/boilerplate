@@ -52,7 +52,6 @@
       user-select: none;
 	  }
 	  input:checked ~ span:after {
-			@include transform(rotate(135deg));
       border-color: color(color-1);
       border-style: solid;
       border-width: 2px 2px 0 0;
@@ -61,6 +60,7 @@
       height: 5px;
       right: 2px;
       position: absolute;
+			transform: rotate(135deg);
       top: 3px;
       width: 12px;
 	  }
