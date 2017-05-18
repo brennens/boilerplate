@@ -34,7 +34,7 @@ var config = {
         include: APP_DIR,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: [ // webpack 2 loader => use
+          use: [
             'css-loader',
             {
               loader: 'postcss-loader',
